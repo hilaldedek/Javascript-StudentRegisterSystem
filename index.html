@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <h1 class="hello">Hello, world!</h1>
-    <div class="input-group w-50">
+    <h1 class="hello">Student Register System</h1>
+    <div>
+      <div class="input-group w-50">
         <span class="input-group-text">Full name and number</span>
-        <input type="text" aria-label="Fullname" class="form-control">
-        <input type="text" aria-label="number" class="form-control">
+        <input type="text" aria-label="Fullname" class="form-control" id="fullname">
+        <input type="number" aria-label="number" class="form-control" id="number">
       </div>
 
       <div class="input-group w-50">
         <span class="input-group-text">Lessons</span>
-        <select class="form-select" id="inputGroupSelect02">
+        <select class="form-select" id="lesson">
             <option selected>Choose...</option>
             <option value="1">Science and Technology</option>
             <option value="2">Maths</option>
@@ -27,15 +28,23 @@
             <option value="6">Biology</option>
           </select>
           <span class="input-group-text">Note</span>
-        <input type="text" aria-label="number" class="form-control">
+        <input type="number" aria-label="number" id="note" class="form-control">
       </div>
 
       <div class="input-group mb-3 w-50">
-        <input type="file" class="form-control" id="inputGroupFile02">
+        <input type="file" class="form-control" id="photo">
         <label class="input-group-text" for="inputGroupFile02">Upload</label>
       </div>
+      <button type="button" class="btn btn-success" id="submit">Success</button>
 
+      
 
+    </div>
+    <div>
+      <h1 id="fullnameResult"></h1>
+      <h2 id="noteResult"></h2>
+    </div>
+    
 
 
 
