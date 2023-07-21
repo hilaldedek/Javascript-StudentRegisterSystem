@@ -6,10 +6,16 @@ const photo=document.getElementById("photo");
 const submit=document.getElementById("submit");
 const fullnameResult=document.getElementById("fullnameResult");
 const result=document.getElementById("noteResult");
-
+const numberResult=document.getElementById("numberResult");
+const lessonResult=document.getElementById("lessonResult");
+const photoResult=document.getElementById("photoResult");
 
 submit.addEventListener("click",function(){
     fullnameResult.innerText=`${fullname.value}`
+    numberResult.innerText=`${number.value}`
+    lessonResult.innerText=`${lesson.value}`
+    
+    
     if(note.value<=100 && note.value>=95){
         result.innerText=`A`;
     }else if(note.value<=94 && note.value>=90){
@@ -36,8 +42,4 @@ submit.addEventListener("click",function(){
     else{
         result.innerText=`GEÇERSİZ NOT`;
     }
-
-    
-    console.log('not geldi');
-    console.log(note.value);
 })
